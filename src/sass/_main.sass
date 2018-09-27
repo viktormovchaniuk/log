@@ -1,0 +1,876 @@
+.sect
+	padding: 30px 0
+	+q(1000)
+		padding: 70px 0
+		padding-bottom: 100px
+	+q(1400)
+		padding: 135px 0
+		padding-bottom: 100px
+	
+.sect-title
+	text-align: center
+	font-weight: 900
+	margin-bottom: 20px
+	font-size: 18px
+	text-transform: uppercase
+	padding: 0 30px
+	line-height: 1.2
+	+q(500)
+		font-size: 24px
+	+q(700)
+		font-size: 32px
+	+q(1000)
+		font-size: 42px
+		text-align: left
+		padding: 0
+		margin-bottom: 38px
+
+.sect-subtitle
+	display: none
+	font-weight: 900
+	font-size: 11px
+	position: relative
+	margin-bottom: 15px
+	&:before
+		position: absolute
+		content: ''
+		height: 2px
+		width: 50px
+		background-color: $red
+		left: calc(100% + 16px)
+		top: 0
+		bottom: 0
+		margin: auto
+	+q(1000)
+		display: inline-block
+
+.sect-text
+	margin-bottom: 30px
+	line-height: 1.7
+	+q(1000)
+		margin-bottom: 40px
+		line-height: 1.4
+
+.sect-btn
+	text-align: center
+
+.about
+	padding-top: 40px
+	position: relative
+	z-index: 1
+	background-color: #fff
+	+q(1000)
+		background-image: url('../img/about-bg.png')
+		background-position: center 115px
+		background-repeat: no-repeat
+	// opacity: .41
+	// max-width: 70%
+	// top: 300px
+	// margin-left: 0
+	&:before
+		position: absolute
+		content: ''
+		background-image: url('../img/about-bg-m.png')
+		background-repeat: no-repeat
+		background-position: center 120px
+		background-size: contain
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+		margin: auto
+		opacity: .26
+		z-index: -1
+		+q(500)
+			background-position: center 90px
+		+q(600)
+			background-position: center 60px
+		+q(1000)
+			display: none
+			// background-image: url('../img/about-bg.png')
+			// background-position: left top
+			// background-repeat: no-repeat
+			// opacity: .41
+			// max-width: 70%
+			// top: 300px
+			// margin-left: 0
+
+.about-block
+	+q(1000)
+		max-width: 40%
+
+.about .sect-title
+	+q(1000)
+		max-width: 560px
+
+.about-download
+	+q(1000)
+		text-align: left
+
+.download-btn
+	display: inline-block
+	text-transform: uppercase
+	font-size: 11px
+	font-weight: 700
+	text-decoration: underline
+	line-height: 1
+	padding-top: 50px
+	position: relative
+	color: $red
+	+q(1000)
+		padding-left: 53px
+		font-size: 12px
+		padding-top: 0
+	+q(1200)
+		font-size: 14px
+	&:before
+		position: absolute
+		content: ''
+		width: 33px
+		height: 38px
+		left: 0
+		right: 0
+		top: 0
+		margin: auto
+		background-image: url(../img/download.png)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		+q(1000)
+			right: auto
+			bottom: 0
+
+
+.why .container-small
+	position: relative
+
+.why .sect-title
+	+q(1000)
+		max-width: 400px			
+	
+.why-block
+	+q(600)
+		margin: 0 -10px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	+q(1000)
+		margin:  0 -15px
+		margin-top: 75px
+
+.why-col
+	+q(600)
+		padding: 0 10px
+		+make-col(5,10)
+	+q(1000)
+		padding: 0 15px
+		+make-col(3,10)
+		max-width: 290px
+
+.w-100
+	display: none
+	+q(1000)
+		display: block
+		width: 100% !important
+
+
+.why-item
+	margin-bottom: 10px
+	background-image: url(../img/square.svg)
+	background-repeat: no-repeat
+	background-position: left 30px
+	position: relative
+	padding-left: 42px
+	+q(700)
+		margin-bottom: 30px
+	+q(1000)
+		background-size: 27px 48px
+		padding-left: 55px
+		margin-bottom: 50px
+	&-title
+		text-transform: uppercase
+		font-size: 13px
+		font-weight: 900
+		padding-top: 30px
+		display: inline-block
+		line-height: 1.2
+		+q(1000)
+			font-size: 18px
+			margin-bottom: 5px
+	&-subtitle
+		position: absolute
+		font-size: 65px
+		line-height: 1
+		font-weight: 900
+		left: 42px
+		top: 0
+		z-index: -10
+		color: rgba(40, 40, 40, .09)
+		background: linear-gradient(#282828, #d6d6d6)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		opacity: .09
+		+q(1000)
+			font-size: 148px
+			top: -50px
+	&-text
+		font-size: 12px
+		line-height: 1.7
+		+q(1000)
+			font-size: 16px
+
+.why-text
+	text-align: center
+	margin-bottom: 0
+	+q(1000)
+		position: absolute
+		top: 60px
+		right: 0
+		max-width: 500px
+		text-align: left
+		font-size: 18px
+	+q(1200)
+		max-width: 755px
+	+q(1500)
+		right: 100px
+		top: 90px
+
+.why-text:before
+	position: absolute
+	content: ''
+	width: 75px
+	height: 140px
+	background-color: $red
+	z-index: -1
+	left: -107px
+	top: 0
+	bottom: 0
+	margin: auto
+	transform: skewX(-27deg)
+	
+
+.features
+	background-image: url(../img/features-bg-m.jpg)
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+	color: $white
+	position: relative
+	+q(1000)
+		background-image: url(../img/features-bg.jpg)
+
+.features:before,
+.features:after
+	+q(1000)
+		position: absolute
+		content: ''
+		left: 0
+		right: 0
+		margin: auto
+		width: 75px
+		height: 140px
+		background-color: $red
+		transform: skewX(-27deg)
+
+.features:before
+	+q(1000)
+		top: -30px
+
+.features:after
+	+q(1000)
+		bottom: -110px
+
+
+.features .sect-title
+	+q(1000)
+		max-width: 840px
+
+.features-title-help
+	display: none
+	font-size: 18px
+	font-weight: 400
+	text-transform: lowercase
+	margin-top: 5px
+	+q(1000)
+		display: block
+
+.features-block
+	+q(600)
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		margin: 0 -10px
+		margin-bottom: 30px
+	+q(1000)
+		margin: 0 -15px
+		justify-content: space-between
+		align-items: stretch
+		margin-bottom: 0
+
+.features-col
+	margin-bottom: 10px
+	+q(600)
+		padding: 0 10px
+		margin-bottom: 25px
+		+make-col(5,10)
+	+q(1000)
+		+make-col(3, 10)
+		padding: 0 15px
+		margin-bottom: 30px
+
+.features-col-4
+	+q(1000)
+		+make-col(4, 10)
+
+.features-item
+	+q(1000)
+		background-color: #2b3945
+		padding: 30px 40px
+		border-radius: 4px
+		height: 100%
+
+.features-item-title
+	font-size: 12px
+	color: $red
+	font-weight: normal
+	font-weight: 900
+	position: relative
+	margin-bottom: 5px
+	display: inline-block
+	&:after
+		position: absolute
+		left: calc(100% + 15px)
+		top: 0
+		bottom: 0
+		margin: auto
+		content: ''
+		background-color: $white
+		width: 42px
+		height: 2px
+
+.features .container-small
+	position: relative
+
+.features-btn
+	+q(1200)
+		position: absolute
+		right: 30px
+		top: 40px
+
+.advantages .sect-title
+	+q(1000)
+		max-width: 695px
+
+.advantages-block
+	margin: 0 -10px
+	+q(600)
+		display: flex
+		flex-wrap: wrap
+		margin-top: 90px
+		align-items: flex-start
+		justify-content: space-between
+	+q(1000)
+		margin: 0 -15px
+
+.advantages-col
+	max-width: 465px
+	padding: 0 10px
+	+q(600)
+		+make-col(5,10)
+	+q(1000)
+		padding: 0 15px
+		+make-col(5,10)
+	+q(1200)
+		+make-col(3, 10)
+
+.advantages-item
+	padding: 0 30px
+	text-align: center
+	margin-bottom: 30px
+	+q(1000)
+		margin-bottom: 70px
+		display: flex
+		padding: 0
+		align-items: center
+
+.advantages-item-text
+	font-weight: 700
+	+q(1000)
+		text-align: left
+
+.advantages-item-icon
+	border-radius: 50%
+	border: 1px dashed $blue
+	width: 65px
+	height: 65px
+	margin: auto
+	margin-bottom: 10px
+	display: flex
+	justify-content: center
+	align-items: center
+	+q(1000)
+		min-width: 85px
+		min-height: 85px
+		margin-right: 30px
+		margin-top: 0
+		margin-left: 0
+		margin-bottom: 0
+
+.advantages-item-icon .icon
+	width: 40px
+	height: 40px
+	fill: $blue
+
+.services
+	background-color: $white
+
+.services .sect-title
+	+q(1000)
+		max-width: 550px 
+
+.services-block
+	margin: 0 -10px
+	margin-bottom: 20px
+	+q(1200)
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -15px
+		margin-bottom: 30px
+
+.services-col-6
+	+q(1200)
+		+make-col(6,10)
+
+.services-col-4
+	+q(1200)
+		+make-col(4,10)
+
+.services-col
+	padding: 0 10px
+	+q(1200)
+		padding: 0 15px
+
+
+.services-slider-slides
+	display: none
+	margin: 0 -15px
+	+q(1200)
+		display: block
+
+.services-slider-slides .slick-slide
+	margin: 0 15px
+
+.services-slide-content
+	display: flex
+	flex-wrap: wrap
+	position: relative
+
+.services-slider-arrows
+	position: absolute
+	right: -4px
+	bottom: 0px
+	display: flex
+	.services-slider-next
+		transform: rotate(180deg)
+
+
+.services-slide-text,
+.services-slide-img
+	flex: 0 0 50%
+	max-width: 50%
+
+.services-slide-img img
+	width: 100%
+	height: 100%
+	object-fit: cover
+
+
+.services-slide-text
+	padding-right: 40px
+	.sect-text
+		margin-bottom: 30px
+
+.services-slide-link
+	text-transform: uppercase
+	color: #000000
+	font-weight: 700
+	text-decoration: underline
+	transition: .3s all
+	.icon-arrow
+		transition: .3s all
+		transform: rotate(180deg)
+		width: 10px
+		height: 11px
+
+.services-slide-link:hover
+	color: $red
+	.icon-arrow
+		fill: $red
+
+.services-slide-link:active
+	color: #ef2f2f
+	.icon-arrow
+		fill: $red
+
+.services-list
+	max-width: 600px
+	margin: 0 auto
+
+.services-list-title
+	display: none
+	+q(1200)
+		display: block
+		margin-top: -73px
+		margin-bottom: 45px
+		font-size: 20px
+		color: #3b3b3b
+		position: relative
+
+.services-list-title:before
+	+q(1200)
+		position: absolute
+		top: 0
+		bottom: 90px
+		margin: auto
+		content: ''
+		left: -67px
+		transform: skewX(-27deg)
+		width: 75px
+		height: 140px
+		background-color: #ff4f4f
+
+.services-list-item
+	border-style: solid
+	border-width: 2px
+	border-color: rgb(233, 233, 233)
+	background-color: rgb(255, 255, 255)
+	margin-bottom: 10px
+	text-align: center
+	min-height: 56px
+	display: flex
+	align-items: stretch
+	background-image: url('../img/pointer.svg')
+	background-repeat: no-repeat
+	background-position: 97% 50%
+	+q(1200)
+		background: none
+		border: none
+		text-align: left
+		font-size: 14px
+		min-height: auto
+		margin-bottom: 20px
+		overflow: hidden
+
+.services-slider-slides_active .services-list-link
+	+q(1200)
+		color: #000000
+		font-weight: 700
+		position: relative
+		transform: translateX(55px)
+		opacity: 1
+
+
+.services-slider-slides_active .services-list-link:before
+	+q(1200)
+		position: absolute
+		content: ''
+		width: 33px
+		height: 2px
+		left: -53px
+		top: 8px
+		background-color: #000
+
+.services-list-link
+	color: #0e0f0f
+	text-decoration: none
+	display: flex
+	align-items: center
+	flex: 1
+	font-weight: 700
+	+q(1200)
+		color: #8e8d8d
+		font-weight: 400
+
+.services-list-text
+	display: -webkit-box
+	-webkit-line-clamp: 2
+	-webkit-box-orient: vertical  
+	overflow: hidden
+	text-transform: uppercase
+	padding: 0 35px
+	flex: 1
+	+q(1200)
+		padding: 0
+
+
+.certification .sect-title
+	+q(1000)
+		max-width: 405px
+
+.certification-block
+	+q(1000)
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+.certification-col-4
+	+q(1000)
+		+make-col(4, 10)
+
+.certification-col-5
+	+q(1000)
+		+make-col(5,10)
+
+.certification-img
+	+q(1000)
+		margin-top: -110px
+
+.certification-text
+	font-size: 14px
+	font-weight: 700
+	max-width: 260px
+	margin: auto
+	margin-top: 20px
+	color: #000
+
+.certification-img
+	max-width: 695px
+	margin: auto
+
+.feedbacks
+	background-color: $white
+	overflow: hidden
+	background-image: url('../img/feedbacks-bg-m.png')
+	background-repeat: no-repeat
+	background-position: left 0
+	+q(500)
+		background-position: left center
+	+q(1000)
+		background-image: url('../img/feedbacks-bg.png')
+		background-position: right center
+
+.feedbacks .sect-title
+	+q(1000)
+		max-width: 400px
+
+
+.feedbacks .slider
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	max-width: 1185px
+	align-items: center
+	+q(1000)
+		margin-top: -70px
+
+.feedbacks .slider .slider-arrows
+	+q(1000)
+		order: -1
+		justify-content: flex-end
+		margin-bottom: 50px
+		align-items: center
+		align-self: flex-end
+
+.feedbacks .slider-count
+	display: none
+	+q(1000)
+		display: block
+		margin-right: 40px
+
+.feedbacks .slider-count-current
+	font-size: 32px
+	color: #000
+	font-weight: 700
+
+.feedbacks .slider-count-all
+	color: #c4c4c4
+	font-size: 16px
+	font-weight: 700
+
+.feedbacks .slick-slide
+	opacity: 0
+	transition: opacity .5s
+
+.feedbacks .slick-slide.slick-current
+	opacity: 1
+	
+
+.feedbacks .slick-slide.slick-current ~ .slick-slide
+	opacity: 1
+
+.feedbacks .slider-slides
+	order: -1
+	margin: -15px
+	margin-bottom: 20px
+	min-width: 0px
+	width: 100%
+
+.feedbacks .slick-slide
+	margin: 15px
+
+.feedbacks .slick-list
+	overflow: visible
+
+.feedbacks .slider-dots
+	+q(1000)
+		margin-right: 200px
+		align-self: flex-end
+
+.slider-arrows
+	margin-bottom: 15px
+	text-align: center
+	display: flex
+	justify-content: center
+
+.slick-arrow
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: #f6f5f5
+	width: 44px
+	height: 44px
+	margin: 0 4px
+	cursor: pointer
+	+q(1000)
+		width: 66px
+		height: 66px
+
+.slick-arrow.slider-next
+	transform: rotate(-180deg)
+
+
+
+.slide-content
+	margin: auto
+	padding: 30px 15px
+	border-radius: 4px
+	box-shadow: 0.342px 0.94px 13px 0px rgba(0, 0, 0, .14)
+	text-align: center
+	background-color: $white
+	+q(700)
+		padding: 60px 45px
+		max-width: none
+		border-radius: 51px
+	+q(1100)
+		box-shadow: 0.342px 0.94px 62px 0px rgba(0, 0, 0, 0.14)
+
+
+.slide-user
+	margin-bottom: 10px
+	text-align: center
+
+.slide-img
+	border-radius: 50%
+	border: 2px solid rgb(235, 235, 235)
+	background-color: rgb(235, 235, 235)
+	margin: auto
+	margin-bottom: 10px
+	width: 68px
+	height: 68px
+	object-fit: cover
+	+q(1000)
+		width: 142px
+		height: 142px
+
+.slide-username
+	text-transform: uppercase
+	font-weight: 700
+	display: block
+
+.slide-usertitle
+	color: $blue
+	display: block
+
+.slide-text
+	line-height: 1.7
+
+.slick-dots
+    list-style: none
+    display: block
+    text-align: center
+    padding: 0
+    width: 100%
+
+.slick-dots li
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+
+.slick-dots li button 
+	display: block
+	padding: 5px
+	background: none
+	outline: none
+	line-height: 0px
+	font-size: 0px
+	cursor: pointer
+	&:before
+		content: ""
+		display: block
+		height: 10px
+		width: 10px
+		box-sizing: border-box
+		border-width: 1px
+		border-style: solid
+		border-color: $blue
+		border-radius: 50%
+		background: transparent
+		+q(1000)
+			width: 13px
+			height: 13px
+
+.slick-dots li.slick-active button:before
+	background-color: $blue
+	width: 8px
+	height: 8px
+
+.particle-container
+	+r(800)
+		display: none
+
+.particle
+	position: absolute
+	background: $white
+	box-shadow: 0px 16px 9px 0px rgba(255, 255, 255, 0.66)
+
+.particle.red
+	background: $red
+	box-shadow: 0px 16px 9px 0px rgba(253, 43, 43, 0.66)
+
+
+
+
+.particle.blue
+	background: $blue
+	box-shadow: 0px 16px 9px 0px rgba(1, 129, 228, 0.66)
+
+
+@for $i from 1 through 5
+	@keyframes particle-animation-#{$i}
+		100% 
+			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px)) skewX(25deg) rotateX((random(360) * 1deg)) rotateZ((random(360) * 1deg))
+
+	.particle:nth-child(#{$i})
+		animation: particle-animation-#{$i} 45s infinite
+		animation-direction: alternate
+		// animation-fill-mode: forwards
+		$size: random(5) + 7
+		opacity: random(100)/100 + 0.4
+		height: $size + px
+		width: $size * 2 + px
+		animation-delay: -$i * .2s
+		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px)) skewX(25deg) rotateX(40deg)
+
+	.feedbacks .particle:nth-child(#{$i})
+		animation-delay: $i * 100s
+
+	.certification .particle:nth-child(#{$i})
+		animation-delay: -$i * 20s
+		animation-duration: 30s
+
+	.about .particle:nth-child(#{$i})
+		animation-delay: -$i * 20s
+		animation-direction: alternate
+

@@ -1,0 +1,93 @@
+.main-footer
+    background-color: $blue
+    color: $white
+    text-align: center
+    padding: 30px 0
+    +q(1200)
+        padding: 40px 0
+
+.footer-block
+    display: flex
+    flex-direction: column
+    +q(1200)
+        margin: 0 -30px
+        flex-direction: row
+        justify-content: space-between
+
+.footer-item-last
+    order: 1
+    +q(1000)
+        order: 0
+
+.footer-nav
+    border-bottom: 1px solid #0887e9
+
+.footer-item
+    margin-bottom: 20px
+
+.footer-nav
+    padding-bottom: 20px
+
+.footer-nav-item
+    margin-bottom: 12px
+    +q(600)
+        margin-bottom: 0
+    &:last-child
+        margin-bottom: 0
+
+.footer-nav-link
+    color: $white
+    display: block
+    font-weight: 700
+
+.footer-social
+    padding-top: 15px
+    margin-bottom: 10px
+    +q(600)
+        margin-bottom: 20px
+
+.footer-social-item
+    text-transform: uppercase
+    margin-bottom: 12px
+    +q(600)
+        margin-bottom: 0
+    &:last-child
+        margin-bottom: 0
+
+.footer-social-link
+    color: $white
+
+.footer-logo
+    margin-top: 10px
+
+.footer-logo .logo-text
+    font-size: 10px
+    +q(1000)
+        font-size: 16px
+
+.footer-copy
+    font-size: 10px
+    +q(1000)
+        font-size: 16px
+
+.footer-social-list,
+.footer-nav-list
+    +q(600)
+        display: flex
+        justify-content: space-around
+
+.footer-item-3-md
+    +q(1200)
+        +make-col(3, 12)
+
+.footer-item-6-md
+    +q(1200)
+        +make-col(6, 12)
+
+.footer-item-4-xl
+    +q(1600)
+        +make-col(4,12)
+
+.footer-item-2-xl
+    +q(1600)
+        +make-col(2,12)

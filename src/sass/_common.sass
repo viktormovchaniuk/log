@@ -1,0 +1,174 @@
+@font-face 
+    font-family: 'Gotham Pro'
+    src: url('../fonts/GothamPro-Black.woff2') format('woff2'), url('../fonts/GothamPro-Black.woff') format('woff')
+    font-weight: 900
+    font-style: normal
+
+@font-face 
+    font-family: 'Gotham Pro'
+    src: url('../fonts/GothamPro-Bold.woff2') format('woff2'), url('../fonts/GothamPro-Bold.woff') format('woff')
+    font-weight: bold
+    font-style: normal
+
+@font-face
+    font-family: 'Gotham Pro'
+    src: url('../fonts/GothamPro.woff2') format('woff2'), url('../fonts/GothamPro.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+body
+	font-family: 'Gotham Pro', sans-serif
+	font-size: 13px
+	line-height: 1.7
+	color: $gray
+	background-color: #f9f9f9
+	+q(500)
+		font-size: 14px
+		line-height: 1.6
+	+q(700)
+		font-size: 15px
+		line-height: 1.5
+	+q(1000)
+		font-size: 16px
+		line-height: 1.4
+
+.container
+	padding: 0 10px
+	margin: 0 auto
+	max-width: 1710px
+	+q(1000)
+		padding: 0 30px
+
+.container-small
+	max-width: 1480px
+	margin: 0 auto
+	padding: 0 10px
+	+q(1000)
+		padding: 0 30px
+
+.container-extra-small
+	max-width: 900px
+	margin: 0 auto
+	padding: 0 10px
+	+q(1000)
+		padding: 0 30px
+
+.container-medium
+	max-width: 1045px
+	margin: 0 auto
+	padding: 0 10px
+	+q(1000)
+		padding: 0 30px
+
+img
+	max-width: 100%
+	height: auto
+	display: inline-block
+
+a
+	transition: .3s
+	text-decoration: none
+	color: #000
+
+a:hover
+	color: $red
+
+a:active
+	color: #ef2f2f
+
+
+
+textarea
+	resize: none
+
+.white-popup 
+	position: relative
+	background: #f2f2f2
+	padding: 30px 20px
+	width: auto
+	max-width: 430px
+	margin: 20px auto
+	border-radius: 4px
+	+q(1000)
+		padding: 60px 60px
+	
+
+.modal-content
+	text-align: center
+	.btn
+		width: 100%
+
+.modal-title
+	font-size: 16px
+	font-weight: 900
+	text-transform: uppercase
+	color: #000
+	position: relative
+	padding-bottom: 22px
+	margin-bottom: 15px
+	+q(1000)
+		padding-bottom: 25px
+		font-size: 22px
+	&:before
+		position: absolute
+		content: ''
+		left: 0
+		right: 0
+		bottom: 0
+		margin: auto
+		width: 15%
+		height: 2px
+		background-color: $red
+
+.modal-help
+	color: #000000
+	font-size: 13px
+	display: inline-block
+	margin-bottom: 15px
+	+q(1000)
+		font-size: 14px
+
+.form-item
+	margin-bottom: 20px
+
+
+.mfp-bg
+	background-color: #000
+	opacity: .68
+
+/* overlay at start */
+.mfp-fade.mfp-bg 
+  opacity: 0
+  -webkit-transition: all 0.15s ease-out
+  -moz-transition: all 0.15s ease-out
+  transition: all 0.15s ease-out
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready 
+  opacity: 0.8
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing 
+  opacity: 0
+
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content 
+  opacity: 0
+
+  -webkit-transition: all 0.15s ease-out
+  -moz-transition: all 0.15s ease-out
+  transition: all 0.15s ease-out
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content 
+  opacity: 1
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+  opacity: 0
+
+
+
+
+

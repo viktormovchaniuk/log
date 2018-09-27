@@ -1,0 +1,58 @@
+.item-descr
+    margin-bottom: 35px
+    h2
+        font-size: 15px
+        margin-bottom: 25px
+        +q(1000)
+            font-size: 28px
+            line-height: 1.5
+            margin-bottom: 55px
+    p
+        font-size: 13px
+        margin-bottom: 25px
+        color: #1c1c1c
+        +q(1000)
+            font-size: 18px
+            margin-bottom: 35px
+    h3,h4,h5,h6
+        font-size: 13px
+        +q(1000)
+            font-size: 18px
+    b,strong
+        display: inline-block
+        font-size: 13px
+        margin-bottom: 5px
+        +q(1000)
+            font-size: 18px
+            margin-bottom: 10px
+    ul
+        padding: 5px 0
+        margin-bottom: 25px
+    ul li
+        color: #767676
+        font-size: 13px
+        padding-left: 25px
+        margin-bottom: 10px
+        position: relative
+        +q(1000)
+            font-size: 16px
+        &:before
+            position: absolute
+            content: ''
+            width: 10px
+            height: 10px
+            background-color: $blue
+            left: 0
+            top: 7px
+            border-radius: 50%
+    ul li:last-child
+        margin-bottom: 0
+    blockquote
+        background-color: $white
+        text-align: center
+        padding: 20px 10px
+        margin-bottom: 25px
+        +q(1000)
+            padding: 50px 60px
+    blockquote p
+        margin-bottom: 20px

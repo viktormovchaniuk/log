@@ -1,0 +1,347 @@
+.main-header
+    background-color: #3b496d
+    z-index: 10
+    text-align: center
+    color: $white
+    position: relative
+    min-height: 480px
+    +q(1000)
+        min-height: 833px
+
+.main-header-slider
+    overflow: hidden
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    margin: auto
+    z-index: -1
+
+.main-header-slide
+    height: 100%
+    background-repeat: no-repeat
+    background-position: center 57px
+    background-size: cover
+    // padding-bottom: 90.76086956521739%
+    min-height: 480px
+    +q(1000)
+        background-position: top center
+        min-height: 833px
+
+// .main-header-slider .slick-list,
+// .main-header-slider .slick-track
+//     height: 100%
+
+
+.header-block
+    display: flex
+    flex-direction: column
+
+.header-btn
+    order: -1
+    z-index: 100
+    padding: 10px 0px
+    padding-top: 13px
+    align-self: center
+    margin-left: 25px
+    +q(1000)
+        position: absolute
+        right: 37px
+        top: 60px
+        padding: 0
+
+.call-btn
+    border: 1px solid #000
+    +q(1000)
+        border-color: #ffffff
+        color: #fff
+
+.menu-btn
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    margin: auto
+    background-color: $white
+    min-height: 57px
+    z-index: 100
+    +q(1000)
+        right: auto
+        bottom: 0
+        min-height: auto
+        min-width: 55px
+        background-color: #f2f2f2
+    +q(1200)
+        min-width: 105px
+
+    .icon-menu
+        position: absolute
+        width: 25px
+        height: 25px
+        left: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        margin-left: 10px
+        box-sizing: border-box
+        cursor: pointer
+        +q(1000)
+            top: 60px
+            left: 0
+            right: 0
+            margin: auto
+            bottom: auto
+
+// .toggler
+//     position: absolute
+//     background-color: transparent
+//     width: 25px
+//     height: 25px
+//     left: 0
+//     top: 0
+//     bottom: 0
+//     margin: auto
+//     margin-left: 10px
+//     box-sizing: border-box
+//     +q(1000)
+//         top: 60px
+//         left: 0
+//         right: 0
+//         margin: auto
+//         bottom: auto
+//         padding: 20px
+//     &-item
+//         position: absolute
+//         width: 21px
+//         height: 2px
+//         border-radius: 3px
+//         left: 0
+//         right: 0
+//         top: 0
+//         bottom: 0
+//         margin: auto
+//         background-color: $black
+//         +q(1000)
+//             width: 25px
+//     &-item:first-child
+//         transform: translateY(-5px)
+//         +q(1000)
+//             transform: translateY(-7px)
+//     &-item:last-child
+//         transform: translateY(5px)
+//         +q(1000)
+//             transform: translateY(7px)
+
+.main-logo
+    padding-top: 37px
+    margin-bottom: 65px
+    +q(1000)
+        padding-top: 60px
+
+.logo
+    &-text
+        font-size: 12px
+        font-weight: 400
+        letter-spacing: -0.09em
+        text-transform: uppercase
+        transform: scaleY(1.4)
+        text-transform: uppercase
+        display: inline-block
+        vertical-align: middle
+        +q(1000)
+            font-size: 19px
+    &-img
+        width: 25px
+        height: 22px
+        display: inline-block
+        vertical-align: middle
+        +q(1000)
+            width: 38px
+            height: 33px
+
+.header-map
+    display: none
+    margin-bottom: 60px
+    +q(1000)
+        display: inline-block
+
+.main-title
+    font-size: 28px
+    text-transform: uppercase
+    margin-bottom: 23px
+    font-weight: 900
+    line-height: 1.2
+    +q(500)
+        font-size: 38px
+    +q(1000)
+        font-size: 50px
+
+.hero
+    padding-bottom: 40px
+
+.hero-text
+    font-size: 14px
+    padding: 0 15px
+    line-height: 1.5
+    max-width: 740px
+    margin: auto
+    margin-bottom: 35px
+    +q(500)
+        font-size: 18px
+    +q(700)
+        font-size: 24px
+    +q(1000)
+        margin-bottom: 20px
+
+.header-social
+    display: none
+    background-color: #fff
+    position: absolute
+    bottom: 0
+    right: 0
+    color: $black
+    font-weight: 700
+    text-transform: uppercase
+    +q(1000)
+        display: block
+
+.header-next
+    display: none
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    margin: auto
+    +q(1500)
+        display: block
+
+.header-next .btn-next
+    color: #fff
+    padding: 34px 30px
+    font-size: 10px
+    position: relative
+    padding-left: 50px
+    &:before
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        background-color: #fff
+        content: ''
+        width: 29px
+        height: 1px
+        
+
+
+.header-social-item
+    display: inline-block
+    padding: 24px 20px
+    font-size: 14px
+    +q(1200)
+        padding: 34px 30px
+
+.header-social-link
+    display: block
+    color: $black
+    font-weight: 700
+
+
+.main-nav
+    position: absolute
+    background-color: $blue
+    padding-top: 57px
+    left: 0
+    top: 0
+    display: flex
+    flex-direction: column
+    padding-left: 10px
+    padding-right: 10px
+    z-index: 99
+    transition: .5s all ease-in-out
+    transform: translateX(-200%)
+    min-height: 480px
+    +q(1000)
+        min-width: 500px
+        left: 55px
+        bottom: 0
+    +q(1200)
+        left: 105px
+
+.main-nav.active
+    transform: translateX(0%)
+
+
+.nav-logo
+    margin-top: 50px
+    margin-bottom: 70px
+
+.nav-list
+    text-align: left
+    margin-bottom: 20px
+
+.nav-item
+    margin-bottom: 25px
+
+.nav-item:last-child
+    margin-bottom: 0
+
+.nav-link
+    color: $white
+    text-transform: uppercase
+    font-weight: 400
+    font-size: 13px
+    display: block
+    padding-left: 43px
+    +q(1000)
+        font-size: 30px
+        padding-left: 130px
+
+.nav-link.active
+    position: relative
+    font-weight: 900
+    font-size: 16px
+    +q(1000)
+        font-size: 40px
+    &:before
+        position: absolute
+        content: ''
+        background-color: $white
+        left: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        width: 23px
+        height: 1px
+        +q(1000)
+            left: -10px
+            width: 120px
+            height: 2px
+
+
+
+.nav-social
+    padding-top: 20px
+    border-top: 1px solid #1087e2
+    margin-top: auto
+    +q(1000)
+        border-top: none
+
+.nav-social-list
+    +q(1000)
+        display: flex
+        justify-content: space-around
+
+.nav-social-link
+    color: $white
+    text-transform: uppercase
+    margin-bottom: 12px
+    display: block
+    +q(1000)
+        margin-bottom: 40px
+
+        
+
+
+

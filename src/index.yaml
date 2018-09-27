@@ -1,0 +1,11 @@
+ProjectTitle: spele
+
+PageList:
+- file: page.html
+  ready: 50
+- file: services.html
+  ready: 50
+- file: contacts.html
+  ready: 50
+- file: item.html
+  ready: 50

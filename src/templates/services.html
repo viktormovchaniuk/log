@@ -1,0 +1,140 @@
+---
+title: Services page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+{# partial example #}
+{% include "partials/_page-header.html" %}
+
+<main class="page-content">
+    <div class="particle-container">
+      <div class="particle blue"></div>
+      <div class="particle blue"></div>
+      <div class="particle blue"></div>
+      <div class="particle blue"></div>
+  </div>
+  <div class="container-small">
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Услуги</li>
+        </ul>
+      </nav>
+      <div class="page-services">
+        <ul class="page-services-list">
+          <li class="page-services-item">
+            <a class="page-services-link" href="item.html">
+                <img src="img/service-1.jpg" alt="">
+                <h3 class="page-services-title">
+                  Автомобильные грузовые перевозки
+                </h3>
+            </a>
+          </li>
+          <li class="page-services-item">
+            <a  class="page-services-link"href="item.html">
+                <img src="img/service-2.jpg" alt="">
+              <h3 class="page-services-title">
+                ДОСТАВКА СБОРНЫХ 
+                  И МАЛЫХ ГРУЗОВ
+              </h3>
+            </a>
+          </li>
+          <li class="page-services-item">
+            <a class="page-services-link" href="item.html">
+                <img src="img/service-3.jpg" alt="">
+              <h3 class="page-services-title">
+                Авиаперевозки
+              </h3>
+            </a>
+          </li>
+          <li class="page-services-item">
+            <a class="page-services-link" href="item.html">
+                <img src="img/service-4.jpg" alt="">
+              <h3 class="page-services-title">
+                МУЛЬТИМОДАЛЬНЫЕ 
+                  ПЕРЕВОЗКИ ГРУЗОВ
+              </h3>
+            </a>
+          </li>
+          <li class="page-services-item">
+            <a class="page-services-link" href="item.html">
+                <img src="img/service-5.jpg" alt="">
+              <h3 class="page-services-title">
+                Морские контейнерные 
+                  перевозки
+              </h3>
+              </a>
+          </li>
+          <li class="page-services-item">
+            <a class="page-services-link" href="item.html">
+                <img src="img/service-6.jpg" alt="">
+              <h3 class="page-services-title">
+                международные грузоперевозки
+              </h3>
+            </a>
+          </li>
+          <li class="page-services-item">
+            <a class="page-services-link" href="item.html">
+                <img src="img/service-7.jpg" alt="">
+              <h3 class="page-services-title">
+                доставка грузов из европы
+              </h3>
+            </a>
+          </li>
+          <li class="page-services-item">
+            <a class="page-services-link" href="item.html">
+                <img src="img/service-8.jpg" alt="">
+              <h3 class="page-services-title">
+                поставки оборудования, 
+                  аксессуаров и запчастей из стран азии со складов производителей
+              </h3></a>
+          </li>
+          <li class="page-services-item">
+            <a class="page-services-link" href="item.html">
+                <img src="img/service-9.jpg" alt="">
+                <h3 class="page-services-title">
+                  услуги по содействию в таможенном оформлении 
+                  грузови всех сопутствующих 
+                  документов
+                </h3>
+            </a>
+          </li>
+          <li class="page-services-item">
+            <a class="page-services-link" href="item.html">
+                <img src="img/service-10.jpg" alt="">
+              <h3 class="page-services-title">
+                Доставка грузов из США
+              </h3>
+            </a>
+          </li>
+          <li class="page-services-item">
+            <a class="page-services-link" href="item.html">
+                <img src="img/service-11.jpg" alt="">
+              <h3 class="page-services-title">
+                доставка грузов из китая
+              </h3>
+            </a>
+          </li>
+          <li class="page-services-item page-services-item-last">
+           
+              <h3 class="page-services-last-title">
+                Давайте начнем сотрудничать прямо сейчас.
+              </h3>
+              <a href="#order-popup" class="btn btn-primary open-popup-link">заказать доставку</a>
+              <span class="page-services-text"> 
+                или звоните +7 (495) 792-75-17
+                  и наши специалисты 
+                  проконсультируют Вас
+                </span>
+          </li>
+      
+        </ul>
+      </div>
+  </div>
+</main>
+
+{% include "partials/_footer.html" %}
+
+{% endblock %}

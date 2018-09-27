@@ -1,0 +1,24 @@
+.form-input
+    display: block
+    font-family: 'Gotham Pro', sans-serif
+    width: 100%
+    padding: 15px 20px
+    font-size: 13px
+    line-height: 1.5
+    color: #495057
+    background-color: #f2f2f2
+    background-clip: padding-box
+    border: 1px solid rgb(220, 220, 220)
+    border-radius: 4px
+    transition: .3s all
+    +placeholder
+        font-size: 13px
+        color: #a1a1a1
+        +q(1000)
+            font-size: 14px
+
+.form-input:focus
+    border-color: #111111
+
+
+

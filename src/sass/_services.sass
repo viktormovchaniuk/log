@@ -1,0 +1,181 @@
+.page-header
+    position: relative
+    text-align: center
+    color: #fff
+    background-color: #3e3938
+    background-repeat: no-repeat
+    background-position: 50% 57px
+    background-size: cover
+    +q(1000)
+        background-position: center center
+    .header-block
+        min-height: 257px
+        +q(500)
+            min-height: 350px
+        +q(700)
+            min-height: 400px
+        +q(1000)
+            min-height: 600px
+    .page-title-text
+        font-size: 24px
+        font-weight: 900
+        +q(700)
+            font-size: 36px
+        +q(1000)
+            font-size: 65px
+    .page-title
+        display: flex
+        flex: 1
+        justify-content: center
+        align-items: center
+        position: relative
+        z-index: 10
+        text-transform: uppercase
+        &:before
+            position: absolute
+            right: 0
+            left: 0
+            top: 0
+            bottom: 0
+            margin: auto
+            content: ''
+            width: 50px
+            height: 100px
+            transform: skewX(-22deg)
+            background-color: $blue
+            z-index: -1
+            +q(500)
+                width: 70px
+                height: 120px
+            +q(700)
+               width: 100px
+                height: 200px
+            +q(1000)
+                width: 130px
+                height: 250px
+    .main-logo
+        display: none
+        margin-bottom: -60px
+        +q(1000)
+           display: block
+        .logo-text
+            +q(1000)
+                font-size: 17px
+
+
+.breadcrumb
+    display: flex
+    flex-wrap: wrap
+    padding: 16px 0
+    justify-content: center
+    +q(500)
+        margin-top: 30px
+        margin-bottom: 10px
+    +q(700)
+        margin-top: 50px
+        margin-bottom: 30px
+    +q(1000)
+        justify-content: flex-start
+        margin-top: 60px
+        margin-bottom: 50px
+
+.breadcrumb-item a
+    font-size: 14px
+    color: #757575
+
+.breadcrumb-item.active
+    color: #000000
+
+.breadcrumb-item
+    font-size: 14px
+
+.breadcrumb-item + .breadcrumb-item::before 
+    display: inline-block
+    padding-right: .5rem
+    padding-left: .5rem
+    color: #000000
+    content: ">"
+
+.page-services-list
+    margin: 0 -10px
+    +q(700)
+        display: flex
+        flex-wrap: wrap
+    +q(1000)
+        margin-bottom: 150px
+        margin: 0 -15px
+
+
+.page-services-item
+    padding: 0 10px
+    margin: auto
+    margin-bottom: 10px
+    height: 450px
+    max-width: 450px
+    +q(600)
+        margin-bottom: 20px
+    +q(700)
+        +make-col(5, 10)
+        margin-bottom: 30px
+    +q(1000)
+        +make-col(3.3, 10)
+        padding: 0 15px
+        max-width: 335px
+    +q(1200)
+        +make-col(2.5, 10)
+
+.page-services-link
+    display: flex
+    flex: 1
+    height: 100%
+    position: relative
+    background-color: #83888e
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &:before
+        position: absolute
+        content: ''
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0, 0.9))
+        
+
+.page-services-title
+    text-transform: uppercase
+    padding: 0 50px
+    color: #fff
+    font-size: 14px
+    font-weight: 700 
+    text-align: center
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 25px
+
+.page-services-item-last
+    display: flex
+    flex-direction: column
+    text-align: center
+    justify-content: space-around
+    flex: 1
+    padding: 50px 40px
+
+.page-services-last-title
+    font-size: 18px
+    color: #000
+    +q(1000)
+        font-size: 29px
+    
+
+.page-services-help-text
+    font-size: 13px
+    font-weight: 700
+    color: #000
+    +q(1000)
+        font-size: 14px
+    
